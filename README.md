@@ -1,33 +1,48 @@
 # Saatchi Art Code Challenge
 
+​
 In this example, we have an art browse app partially written.
-
-You can run the app with `yarn dev` ( this will install and start service ) and access it via localhost:3000 in the browser.
-
+​
+You can run the app with `yarn dev`. This will install and start a web server for you. You can then access it via http://localhost:3000 in the browser.
+​
 There are two Routes available:
+​
 
-[Artworks - the VIEW you will update](http://localhost:3000/challenge/artworks)
+1. [Artworks - the view you will update](http://localhost:3000/challenge/artworks)
+2. [Instructions - all the tasks we would like you to complete](http://localhost:3000/challenge/instructions)
+   ​
 
-[Instructions - all the tasks we would like you to complete](http://localhost:3000/challenge/instructions)
+## Project Setup
 
-The actual [Challenge Markdown File](public/CHALLENGE.md) can be found in the `public` folder
+​
+You will start off with a basic site scaffold using [Next.js](https://nextjs.org/docs), [React](https://reactjs.org/), and [Redux](https://redux.js.org/). This is the same combination of tools we use at Saatchi Art. We follow common best practices in the project structure, so it shouldn't be anything too unusual. Feel free to read the docs for these technologies if you need to refresh your knowledge.
+​
+The framework adds HMR (hot module reloading) for you. The only time you will should have to restart the server is if you make a change to the something in the [Express.js](https://expressjs.com/) application. You should not have to modify the Express `server.js` itself.
+​
 
-#### Project Setup
+## File Structure
 
-We have installed a basic setup on NEXT.js with React and Redux. There is no special knowledge needed for this Framework (it is what we use in house), but you can read over the docs if you would like.
+​
+The suggested files you should work with are located in `apps/challenge` and `reducers.js`.
+​
+You may see comments at the top of files indicating whether you should avoid or edit that file. These are just suggestions. Feel free to complete the coding challenge in your preferred coding style. This includes modifying or adding files as needed.
+​
 
-The framework adds HMR (hot module reloading) for you and the only time you should have to restart the server is if you make a change to the Express framework (you should NOT have to modify the EXPRESS server). When in doubt try refreshing browser window. We have also added [Chrome Redux Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) to the projects middleware. **The `REDUX` setup is already added to the APP**.
+## Adding a Package
 
-#### Files you Should Touch
+​
+Feel free to add any npm packages you need e.g. yarn add dompurify. If you add a package, you should not have to restart the dev server.
+​
 
-The files you should touch are located in `apps/challenge` and `reducers.js`. You may see comments at the top of files; these are just a suggestion, but if you feel that you need to touch a file or edit something, go for it.
+## End Result
 
-#### Adding a Package
-
-Feel free to add any packages you need, example: `yarn add dompurify`. All packages will be available after download completion. You should **NOT** have to restart the APP.
-
-#### End Result
-
-In the end we want the app to look like this:
-
+​
+When you are finished, we expect the app will look something like this:
+​
 ![SampleApp](https://user-images.githubusercontent.com/643526/73705331-7e906b80-46aa-11ea-9fa7-e98f37b6319b.gif)
+​
+
+## Challenge Details
+
+​
+Please continue to [public/CHALLENGE.md](public/CHALLENGE.md) for more details about the coding challenge.
