@@ -5,22 +5,42 @@
 import React from "react";
 import styled from "styled-components";
 
+import MyConnector from "../connectors/MyConnector";
+
+import {
+  ArtworkItem,
+  Column,
+  Favicon,
+  ImageWrapper,
+  Info,
+  Row,
+  SubText,
+  Title
+} from "./styles/artworkItem";
+
 export default props => {
+  const { data } = props;
+  if (!data) {
+    return <p>Please set ArtworkItems into a attribute of `data`</p>;
+  }
   const {
+    artId,
     artworkTitle,
     artworkUrl,
+    imageUrl,
     profileUrl,
     subject,
     artist,
     dimensions,
     category,
     product
-  } = props;
+  } = data;
+  const isFavorited = false;
   return (
     <ArtworkItem>
       <ImageWrapper>
-        <img src={props.imageUrl} />
-        <Favicon className="fa fa-heart" />
+        <img src={imageUrl} />
+        <Favicon isFavorited={isFavorited} className="fa fa-heart" />
       </ImageWrapper>
       <Info>
         <Title>

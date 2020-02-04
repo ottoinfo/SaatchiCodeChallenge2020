@@ -2,10 +2,10 @@
  * You can EDIT this FILE
  */
 
-import React from "react";
+import React, { useEffect } from "react";
 
 import { ArtworkList, ListItems } from "./styles";
-// import ArtworkItem from "./ArtworkItem"
+// import ArtworkItem from "./ArtworkItem";
 
 export default () => (
   <ArtworkList>

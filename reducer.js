@@ -4,11 +4,9 @@ export const initialState = {
   name: "", // App Name
   params: {}, // Express/NEXTjs URL Params/Queries
   markdown: "", // Markdown Notes
-  items: null, // Fetch Data
-  search: null, // Search Input
-  favorites: null, // ID's of Products
-  isLoading: null,
-  error: null
+  artworks: null,
+  search: null,
+  favorites: null
 };
 
 const reducer = (state = initialState, action) => {

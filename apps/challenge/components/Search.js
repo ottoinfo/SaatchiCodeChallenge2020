@@ -6,7 +6,7 @@ import React from "react";
 
 import { Search, SVG, Input, Mag } from "./styles";
 
-export default props => {
+export default () => {
   return (
     <Search>
       <SVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 8">

@@ -1,23 +1,22 @@
 # Saatchi Art Code Challenge
 
-### It looks like this currently:
+### Our current App looks like this:
 
-![Fetch Request](https://dl.dropboxusercontent.com/s/pd1o775nk9q92kx/Start..jpg?dl=0)
+![Screen Shot 2020-02-03 at 1 58 10 PM](https://user-images.githubusercontent.com/643526/73705825-c95eb300-46ab-11ea-9f53-a8aaa2080b13.jpg)
 
-### Starting Redux State
+### And we are hoping you can make it to look like this:
 
-### And we expect it to look like this:
-
-![Fetch Request](https://dl.dropboxusercontent.com/s/oxusi9ccukt3bad/Finished.gif?dl=0)
+![SampleApp](https://user-images.githubusercontent.com/643526/73705331-7e906b80-46aa-11ea-9fa7-e98f37b6319b.gif)
 
 ### In order to do this, we need to complete several tasks:
 
-1. Retrieve artwork data from an [API endpoint](http://localhost:3000/api/data) on starting the application
+1. Retrieve artwork data from an [API endpoint](http://localhost:3000/api/data)
 
-2. Reduce that data into the global state
+2. Dispatch/Reduce that data into the Redux Store
 
-3. Hook up the search box so it filters the artworks displayed by artwork title
-   on keyup. This should be done in the redux way:
+3. Display Artworks in `ArtworkList.js`, instructions in File
+
+4. Hook up the search box so it filters the artworks displayed by attribute `artworkTitle` on keyup. This should be done in the redux way:
 
    - create an action to `dispatch`
 
@@ -27,12 +26,8 @@
 
    - ensure the `ArtworksList` receive the filtered `Artwork` data to render components
 
-4. Add some `flexbox` OR `grid` styling to display the filtered artworks in a MAX of grid 4 across
+5. Add some `flexbox` OR `grid` styling to display the filtered artworks in a MAX of grid 4 across
 
-5. **Bonus**: Add in favoriting Artwork into the store, tie it into local storage to retrieve favorites on refresh of the page
-
-### For reference here's an example Finished Apps redux state:
-
-![Fetch Request](https://dl.dropboxusercontent.com/s/a6wlsjojnpzsdl4/ReduxState.gif?dl=0)
+6. **Bonus**: Add in favoriting Artwork into the store, tie it into local storage to retrieve favorites on refresh of the page
 
 ### As you go, save commits however you think is appropriate for a task. When you're done, please put it on your GITHUB account and send back the url.
