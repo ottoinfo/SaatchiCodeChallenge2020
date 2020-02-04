@@ -9,10 +9,11 @@ export const Instructions = styled.div`
   h1 {
     font-family: ${props => props.theme.fontFamilySerif};
     font-weight: normal;
-    margin: 0 0 30px;
+    margin: 0;
   }
-  h3 {
+  h5 {
     font-family: ${props => props.theme.fontFamilySerif};
+    font-size: 18px;
     font-weight: normal;
     margin: 35px 0 10px;
     border-bottom: 1px solid ${props => props.theme.colors.borderDark};
