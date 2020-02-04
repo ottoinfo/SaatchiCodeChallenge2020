@@ -2,20 +2,27 @@
  * You can EDIT this FILE
  */
 
-import React from "react";
+import React, { useEffect } from "react";
 
+import MyConnector from "../connectors/MyConnector";
 import { ArtworkList, ListItems } from "./styles";
-// import ArtworkItem from "./ArtworkItem"
+import ArtworkItem from "./ArtworkItem";
 
-export default () => (
+// Step 3 - could start here
+export default MyConnector(({ artworks, search }) => (
   <ArtworkList>
-    <h1>Original Art for Sale</h1>
+    <h1>
+      Original Art for Sale{" "}
+      <span style={{ fontSize: "14px" }}>
+        ( {artworks.length || "0"} artworks)
+      </span>
+    </h1>
 
     <ListItems>
-      <p>
-        Load Artworks via AJAX, Pull into Redux Store, and display each artworks
-        data in a 'ArtworkItem'
-      </p>
+      {artworks.map((data, key) => (
+        <ArtworkItem data={data} key={key} />
+      ))}
+      {!artworks.length ? <p>No Artworks Found</p> : null}
     </ListItems>
   </ArtworkList>
-);
+));

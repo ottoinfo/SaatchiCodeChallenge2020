@@ -5,22 +5,46 @@
 import React from "react";
 import styled from "styled-components";
 
-export default props => {
+import MyConnector from "../connectors/MyConnector";
+
+import {
+  ArtworkItem,
+  Column,
+  Favicon,
+  ImageWrapper,
+  Info,
+  Row,
+  SubText,
+  Title
+} from "./styles/artworkItem";
+
+export default MyConnector(({ data, favorites, favoriteArtwork }) => {
+  if (!data) {
+    return <p>Please set ArtworkItems into a attribute of `data`</p>;
+  }
   const {
+    artId, // Maybe use this VARIABLE to track FAVORITES
     artworkTitle,
     artworkUrl,
+    imageUrl,
     profileUrl,
     subject,
     artist,
     dimensions,
     category,
     product
-  } = props;
+  } = data;
+  // Step 6 (Bonus) isFavorited will turn heart RED if TRUE
+  const isFavorited = favorites.includes(artId); // false
   return (
     <ArtworkItem>
       <ImageWrapper>
-        <img src={props.imageUrl} />
-        <Favicon className="fa fa-heart" />
+        <img src={imageUrl} />
+        <Favicon
+          isFavorited={isFavorited}
+          className="fa fa-heart"
+          onClick={() => favoriteArtwork(artId)}
+        />
       </ImageWrapper>
       <Info>
         <Title>
@@ -56,4 +80,4 @@ export default props => {
       </Info>
     </ArtworkItem>
   );
-};
+});

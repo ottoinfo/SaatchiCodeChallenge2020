@@ -14,7 +14,11 @@ The actual [Challenge Markdown File](public/CHALLENGE.md) can be found in the `p
 
 #### Project Setup
 
-We have installed a basic setup on [NEXT.js](https://nextjs.org/docs) with React and Redux. There is no special knowledge needed for this Framework ( it is what we use in house ), but you can read over docs if you would like. The framework adds HMR ( hot module reloading ) for you and the only time you will should have to restart the server is if you make a change to the Express framework ( you should NOT have to modify the EXPRESS server ). We have also added [Chrome Redux Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) to the projects middleware. **The `REDUX` setup is already added to the APP**.
+We have installed a basic setup on [NEXT.js](https://nextjs.org/docs) with React and Redux. There is no special knowledge needed for this Framework ( it is what we use in house ), but you can read over docs if you would like.
+
+The framework adds HMR ( hot module reloading ) for you and the only time you will should have to restart the server is if you make a change to the Express framework ( you should NOT have to modify the EXPRESS server ). **Changes to `reducer.js` you may have to REFRESH the browsers**. When in doubt try refreshing browser window.
+
+We have also added [Chrome Redux Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) to the projects middleware. **The `REDUX` setup is already added to the APP**.
 
 #### Files you Should Touch
 
@@ -27,7 +31,7 @@ You may see `COMMMENTS` at the top of files, these are just a **suggestion**. If
  * You can EDIT this FILE
  */
 
-OR;
+// OR
 
 /*
  * Should NOT touch this FILE

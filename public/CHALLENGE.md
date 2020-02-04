@@ -14,10 +14,11 @@
 
 1. Retrieve artwork data from an [API endpoint](http://localhost:3000/api/data) on starting the application
 
-2. Reduce that data into the global state
+2. Dispatch/Reduce that data into the Redux Store
 
-3. Hook up the search box so it filters the artworks displayed by artwork title
-   on keyup. This should be done in the redux way:
+3. Display Artworks in `ArtworkList.js`, instructions in File
+
+4. Hook up the search box so it filters the artworks displayed by attribute `artworkTitle` on keyup. This should be done in the redux way:
 
    - create an action to `dispatch`
 
@@ -27,9 +28,9 @@
 
    - ensure the `ArtworksList` receive the filtered `Artwork` data to render components
 
-4. Add some `flexbox` OR `grid` styling to display the filtered artworks in a MAX of grid 4 across
+5. Add some `flexbox` OR `grid` styling to display the filtered artworks in a MAX of grid 4 across
 
-5. **Bonus**: Add in favoriting Artwork into the store, tie it into local storage to retrieve favorites on refresh of the page
+6. **Bonus**: Add in favoriting Artwork into the store, tie it into local storage to retrieve favorites on refresh of the page
 
 ### For reference here's an example Finished Apps redux state:
 
